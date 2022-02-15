@@ -1,2 +1,2 @@
 # goit-markup-hw-04
-https://github.com/VladimirHavruniak/goit-markup-hw-03.git
+https://vladimirhavruniak.github.io/goit-markup-hw-04/
