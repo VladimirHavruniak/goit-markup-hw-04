@@ -382,7 +382,7 @@ a {
 }
 .footer-content {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 /* Contact us*/
 .footer-contacts {
