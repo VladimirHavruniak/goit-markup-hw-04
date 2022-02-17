@@ -130,6 +130,37 @@ a {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.nav-thumb {
+  position: relative;
+}
+.nav-thumb .link.current::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--accent-color);
+}
+.nav-thumb .link:hover::after,
+.nav-thumb .link:focus::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--accent-color);
+}
+
 /* Contacts */
 .contacts {
   display: flex;
@@ -277,7 +308,27 @@ a {
 .work-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+.work-thumb {
+  position: relative;
+}
+.work-title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+}
 /* Workers list */
 .workers-list {
   display: flex;
@@ -498,6 +549,34 @@ a {
 .works-list .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.works-examples {
+  position: relative;
+  overflow: hidden;
+}
+
+.examples-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translatex(-100%);
+  transition: transform 250ms ease;
+}
+.works-examples:hover .examples-overlay {
+  transform: translatex(0);
+}
+.example-text {
+  display: block;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 63px 24px;
+
+  color: var(--primary-white-color);
 }
 .works-border {
   border-bottom: 1px solid var(--secondary-border-color);
