@@ -481,7 +481,6 @@ a {
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -5px;
 }
 .works-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
